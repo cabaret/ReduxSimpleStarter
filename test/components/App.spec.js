@@ -1,7 +1,8 @@
-import { renderComponent , expect } from '../test_helper';
+/* eslint-env mocha */
+import { renderComponent, expect } from '../test_helper';
 import App from '../../src/components/app';
 
-describe('App' , () => {
+describe('App', () => {
   let component;
 
   beforeEach(() => {
@@ -9,6 +10,6 @@ describe('App' , () => {
   });
 
   it('renders something', () => {
-    expect(component).to.exist;
+    expect(component).toExist();
   });
 });
